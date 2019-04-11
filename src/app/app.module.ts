@@ -14,6 +14,7 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostsService } from './posts/posts.service';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PostsService } from './posts/posts.service';
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    PostListComponent
+    PostListComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
