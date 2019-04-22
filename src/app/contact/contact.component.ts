@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormGroup } from '@angular/forms';
 
 @Component ({
   selector: 'app-contact',
@@ -8,7 +8,9 @@ import { NgForm } from '@angular/forms';
 })
 
 export class ContactComponent {
-  onSubmitForm(form: NgForm) {
+  form: FormGroup;
+
+  onSubmitForm() {
 
   }
 }

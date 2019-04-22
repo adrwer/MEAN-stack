@@ -1,40 +1,40 @@
 <mat-card>
-    <form (submit)="onSubmitForm()" #postForm="ngForm">
+    <form [formGroup]="form" (submit)="onSubmitForm()">
         <mat-form-field>
-            <input matInput type="text" name="fName" ngModel required minlength="5" placeholder="First Name" #fName="ngModel">
-            <mat-error *ngIf="fName.invalid">Please enter a value</mat-error>
+            <input matInput type="text" name="fName"    placeholder="First Name" >
+            <mat-error *ngIf="form.get('fName').invalid">Please enter a value</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="text" name="lName" ngModel required minlength="5" placeholder="Last Name" #lName="ngModel">
-            <mat-error *ngIf="lName.invalid">Please enter a value</mat-error>
+            <input matInput type="text" name="lName"    placeholder="Last Name" >
+            <mat-error *ngIf="form.get('fName').invalid">Please enter a value</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="date" name="DOB" ngModel required minlength="5" placeholder="Birthday" #dOB="ngModel">
-            <mat-error *ngIf="dOB.invalid">Please enter a value</mat-error>
+            <input matInput type="date" name="DOB"    placeholder="Birthday" >
+            <mat-error *ngIf="form.get('lName').invalid">Please enter a value</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="text" name="gender" ngModel required minlength="5" placeholder="Gender" #gender="ngModel">
-            <mat-error *ngIf="gender.invalid">Please enter a value</mat-error>
+            <input matInput type="text" name="gender"    placeholder="Gender" >
+            <mat-error *ngIf="form.get('gender').invalid">Please enter a value</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="email" name="email" ngModel required minlength="5" placeholder="Email" #email="ngModel">
-            <mat-error *ngIf="email.invalid">Please enter a value</mat-error>
+            <input matInput type="email" name="email"    placeholder="Email" >
+            <mat-error *ngIf="form.get('email').invalid">Please enter a value</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="phone" name="phone" ngModel required minlength="5" placeholder="Phone" #phone="ngModel">
-            <mat-error *ngIf="phone.invalid">Please enter a value</mat-error>
+            <input matInput type="phone" name="phone"    placeholder="Phone" >
+            <mat-error *ngIf="form.get('phone').invalid">Please enter a value</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="text" name="city" ngModel required minlength="5" placeholder="City" #city="ngModel">
-            <mat-error *ngIf="city.invalid">Please enter a value</mat-error>
+            <input matInput type="text" name="city"    placeholder="City" >
+            <mat-error *ngIf="form.get('city').invalid">Please enter a value</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="text" name="state" ngModel required minlength="5" placeholder="State" #state="ngModel">
-            <mat-error *ngIf="state.invalid">Please enter a value</mat-error>
+            <input matInput type="text" name="state"    placeholder="State" >
+            <mat-error *ngIf="form.get('state').invalid">Please enter a value</mat-error>
         </mat-form-field>
         <mat-form-field>
-            <input matInput type="text" name="zip" ngModel required minlength="5" placeholder="Zip Code" #zCode="ngModel">
-            <mat-error *ngIf="zCode.invalid">Please enter a value</mat-error>
+            <input matInput type="text" name="zip"    placeholder="Zip Code" >
+            <mat-error *ngIf="form.get('zip').invalid">Please enter a value</mat-error>
         </mat-form-field>
           <button
               mat-raised-button
