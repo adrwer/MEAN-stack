@@ -17,6 +17,7 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 @NgModule({
@@ -25,12 +26,14 @@ import { ContactComponent } from './contact/contact.component';
     PostCreateComponent,
     HeaderComponent,
     PostListComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
     MatCardModule,
